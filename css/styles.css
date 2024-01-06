@@ -1,0 +1,420 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* #8d5293,#24142c,#85edfb */
+body{
+    min-height: 100vh;
+    background-color: #0F1035;
+    /* font-family: 'Kanit', sans-serif; */
+    /* font-family: 'Lora', serif; */
+    /* font-family: 'Archivo Black', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,h2{
+  font-family: 'Black Ops One', system-ui;
+}
+
+h3{
+  font-family: 'Tektur', sans-serif;
+  font-size:2rem;
+  color:white;
+  letter-spacing: 5px;
+}
+
+.container{
+  width:90%;
+  margin:auto;
+  padding:3rem;
+}
+
+.gradient-background{
+  background: linear-gradient(300deg,#85edfb,#8d5293,#24142c);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+
+/* Styling for Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top:0;
+}
+
+.website-title{
+  display:flex;
+  gap:1rem;
+  align-items: center;
+}
+
+.website-logo{
+  border-radius:50%;
+  height:2.2rem;
+  border: 1px solid white;
+}
+
+.neon-text{
+  font-size:2rem;
+  color:#fff;
+  text-shadow:0 0 10px #ff005b;
+}
+
+.features{
+  display: flex;
+  /* gap:3rem; */
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.feature-item{
+    list-style: none;
+    /* padding-left:1rem; */
+    font-size:1.2rem;
+}
+
+.nav-item{
+  position:relative;
+  text-decoration: none;
+  color:white;
+  /* padding:1rem; */
+  z-index:5;
+  font-weight: 900;
+  padding:1rem 1.5rem 1rem 1rem;
+}
+
+.nav-item::before{
+  content:'';
+  display:block;
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top:0;
+  /* background:hsl(200, 100%, 80%); */
+  background-color: #FFD600 ;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  z-index:-1;
+  transform-origin: right;
+}
+
+.nav-item:hover::before{
+  color:purple;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar-btn{
+  display:none;
+  cursor: pointer;
+}
+
+.nav-icon{
+  height:2rem;
+}
+
+/* Styling for the dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 6;
+  margin:1rem auto 0 auto;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-list{
+  list-style: none;
+}
+
+.dropdown-item {
+  color: #0F1035;
+  font-size:1rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #FFD600;
+}
+
+/* Styling for the Website Quote Section */
+.website-quote{
+  max-width:90%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  text-align: center;
+  color:white;
+  padding: 4rem;
+}
+
+.quote-heading{
+  font-size: 3rem;
+}
+
+.quote-description{
+  font-size: 1.5rem;
+}
+
+/* Styling for Benefits Section */
+.benefits, .faqs, .cordinators{
+  display:flex;
+  /* gap:2rem; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.benefit{
+  padding:1.5rem;
+  margin:1rem;
+  max-width:250px;
+  text-align:center;
+  font-size: 1.2rem;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+
+.benefit:hover{
+  color: #85edfb ;
+}
+.benefit-icon{
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+/* Styling for Cordinator Section */
+.cordinator{
+  padding:1.5rem;
+  margin:2rem 1rem 1rem 1rem ;
+  max-width:300px;
+  text-align:center;
+  font-size: 1rem;
+  /* border: 2px solid purple;
+  border-radius: 10px; */
+}
+.cordinator-image{
+  border-radius:100%;
+  width:12rem;
+  border: 2px solid white;
+}
+
+.cordinator-name{
+  color:#85edfb;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Styling for FAQ's Section */
+.faq{
+  padding:1.5rem;
+  margin:2rem 1rem 1rem 1rem ;
+  max-width:500px;
+  font-size: 1rem;
+  border: 2px solid #85edfb;
+  border-radius: 10px;
+}
+
+.faq:hover{
+  border-color: #FFD600;
+}
+
+.question{
+  font-weight: bold;
+  color:#FF00CD;
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for Contact Section */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-list{
+	list-style: none;
+}
+.footer{
+	background-color: #8d5293;
+  padding: 3rem 0;
+  margin-top:3rem;
+}
+/* #24262b */
+.footer-col{
+   width: 25%;
+   padding: 0 1rem;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -1rem;
+	background-color: #FFD600;
+  /* #e91e63 */
+	height: 2px;
+	box-sizing: border-box;
+	width: 3.5rem;
+}
+
+.footer-list li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-list li a{
+	font-size: 1rem;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-list li a:hover{
+	color: #ffffff;
+	padding-left: 0.5rem;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 3rem;
+	width: 3rem;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 1rem 1rem 0;
+	text-align: center;
+	line-height: 3rem;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #85edfb;
+  /* #ffffff */
+}
+
+.copyright{
+  color:white;
+  margin:1rem;
+}
+
+/* ------------------------------------------ */
+
+        /* Styling for Responsiveness */ 
+
+/* -------------------------------------------- */
+@media screen and (max-width: 1025px) {
+  /* Styling for Navbar */
+  .navbar-btn{
+    display:block;
+    z-index:100;
+  }
+
+  .close{
+    display: none;
+  }
+ 
+  .features {
+    width: 30%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+    border-left: 2px solid rgba(255, 255, 255, 0.9); 
+    border-top-left-radius: 1rem;
+    position: absolute;
+    top: 0;
+    right:0;
+    display: block;
+    text-align: center;
+    padding-top: 5rem;
+    /* to get the tranisition  */
+    transform: translateX(100%); 
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
+  }
+
+  .nav-item{
+    color:#0F1035;
+    padding:0;
+  }
+
+  .feature-item{
+    padding:1rem;
+  }
+
+  .active .features{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; 
+  }
+
+  .active .menu{
+    display:none;
+  }
+
+  .active .close{
+    display:block;
+  }
+
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media screen and (max-width: 615px) {
+  .features{
+    width:80%;
+  }
+
+  .footer-col{
+    width: 100%;
+}
+}
