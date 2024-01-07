@@ -1,4 +1,3 @@
-// alert("Hello");
 const navButton = document.querySelector(".navbar-btn");
 const navbar = document.querySelector(".navbar");
 

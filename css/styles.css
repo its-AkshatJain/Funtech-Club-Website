@@ -136,7 +136,7 @@ h3{
 }
 
 /* Styling for the dropdown */
-.dropdown {
+/* .dropdown {
   position: relative;
 }
 
@@ -171,7 +171,7 @@ h3{
 
 .dropdown-item:hover {
   background-color: #FFD600;
-}
+} */
 
 /* Styling for the Website Quote Section */
 .website-quote{
@@ -212,6 +212,7 @@ h3{
 
 .benefit:hover{
   color: #85edfb ;
+  scale: 1.05;
 }
 .benefit-icon{
   font-size:2rem;
@@ -252,6 +253,8 @@ h3{
 
 .faq:hover{
   border-color: #FFD600;
+  scale: 1.05;
+   /* transform: scale(1.05); */
 }
 
 .question{
