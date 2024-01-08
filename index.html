@@ -22,7 +22,7 @@
 </head>
 <body>
     
-    <!-- Header -->
+    <!-- Header/Navbar -->
     <nav class="navbar">
         <div class="website-title">
             <img class="website-logo" src="images/Home/Funtech-logo.png" alt="Website-Logo" >
@@ -30,8 +30,8 @@
         </div>
         
         <ul class="features">
-            <li class="feature-item"><a class="nav-item" href="#">Home</a></li>
-            <li class="feature-item"><a class="nav-item" href="#">About</a></li>
+            <li class="feature-item"><a class="nav-item" href="index.html">Home</a></li>
+            <li class="feature-item"><a class="nav-item" href="about.html">About</a></li>
             <!-- <li><a class="nav-item" href="#">Events</a></li> -->
             <li class="feature-item dropdown">
                 <a href="events.html" class="nav-item">Events</a>
@@ -42,9 +42,9 @@
                     </ul>
                 </div> -->
             </li>
-            <li class="feature-item"><a class="nav-item" href="#">Register</a></li>
-            <li class="feature-item"><a class="nav-item" href="#">Members</a></li>
-            <li class="feature-item"><a class="nav-item" href="#">Contact</a></li>
+            <li class="feature-item"><a class="nav-item" href="register.html">Register</a></li>
+            <li class="feature-item"><a class="nav-item" href="members.html">Members</a></li>
+            <li class="feature-item"><a class="nav-item" href="#Contact">Contact</a></li>
         </ul>
         <div class="navbar-btn">
             <img class="nav-icon menu" src="images/Home/Hamburger-menu.png" alt="hamburger" >
@@ -52,6 +52,7 @@
         </div>
     </nav>
 
+    <!-- Website quote -->
     <div class="website-quote gradient-background">
         <h2 class="quote-heading">Join the Funtech Club!</h2>
         <p class="quote-description">where technology meets fun and innovation</p>
@@ -94,33 +95,65 @@
         </div>
     </section>
 
+    <!-- image slider -->
+    <section>
+        <h3 class="home-slider-container">Capturing Moments </h3>
+        <!-- <p>Our Events Gallery</p> -->
+        <div class="slider-container">
+        
+            <div class="slider">
+              <div class="slides">
+                <!-- radio buttons -->
+                <input type="radio" name="radio-btn" id="radio1" />
+                <input type="radio" name="radio-btn" id="radio2" />
+                <input type="radio" name="radio-btn" id="radio3" />
+                <input type="radio" name="radio-btn" id="radio4" />
+                <!-- radio buttons end -->
+      
+                <!-- slide images -->
+                <div class="slide first">
+                  <img src="/images/Events/Techbuzz.JPG" alt="E" />
+                </div>
+                <div class="slide">
+                  <img src="/images/Events/TechBuzz2.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/images/Events/TechMania.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/images/Events/Techmania2.jpg" alt="" />
+                </div>
+                <!-- slide images end -->
+              </div>
+            </div>
+          </div>
+          <!-- image slider end -->
+    </section>
+    
+    
     <!-- FAQS -->
     <section class="container">
         <h3>FAQ's</h3>
         <div class="faqs">
             <div class="faq">
-                <p class="question">Q. Lorem ipsum dolor sit amet consectetur?</p>
-                <p class="answer"><b>Ans.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aspernatur.</p>
+                <p class="question">Q. How do I join FunTech Club?</p>
+                <p class="answer"><b>Ans.</b> Visit our website and stay updated about recruitments to become a member.</p>
             </div>
             <div class="faq">
-                <p class="question">Q. Lorem ipsum dolor sit amet consectetur?</p>
-                <p class="answer"><b>Ans.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aspernatur.</p>
+                <p class="question">Q. What activities does FunTech Club organize?</p>
+                <p class="answer"><b>Ans.</b> We host a variety of events, from hackathons to game nights, blending technology with fun, creativity, and innovation.</p>
             </div>
             <div class="faq">
-                <p class="question">Q. Lorem ipsum dolor sit amet consectetur?</p>
-                <p class="answer"><b>Ans.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aspernatur.</p>
+                <p class="question">Q. Can I attend events without being a member?</p>
+                <p class="answer"><b>Ans.</b> Yes, events are open to all, after registration.</p>
             </div>
             <div class="faq">
-                <p class="question">Q. Lorem ipsum dolor sit amet consectetur?</p>
-                <p class="answer"><b>Ans.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aspernatur.</p>
+                <p class="question">Q. How do I join FunTech Club?</p>
+                <p class="answer"><b>Ans.</b> Visit our website and stay updated about recruitments to become a member..</p>
             </div>
             <div class="faq">
-                <p class="question">Q. Lorem ipsum dolor sit amet consectetur?</p>
-                <p class="answer"><b>Ans.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aspernatur.</p>
-            </div>
-            <div class="faq">
-                <p class="question">Q. Lorem ipsum dolor sit amet consectetur?</p>
-                <p class="answer"><b>Ans.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aspernatur.</p>
+                <p class="question">Q. Are non-tech students welcome?</p>
+                <p class="answer"><b>Ans.</b> Absolutely! we welcome all enthusiasts.</p>
             </div>
         </div> 
     </section>
@@ -132,7 +165,7 @@
 
 
     <!-- Contact -->
-    <footer class="footer">
+    <footer id="Contact" class="footer">
         <section class="container">
             <div class="row">
                 <div class="footer-col">
