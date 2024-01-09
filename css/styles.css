@@ -607,6 +607,59 @@ h3{
 
 /* ------------------------------------------ */
 
+        /* Styling for Register Page */ 
+
+/* -------------------------------------------- */
+.register-heading{
+  font-size: 2rem;
+  color:white;
+  padding:2rem 0;
+}
+
+.event-details, .register-link-box{
+  padding:2rem;
+  border-radius:10px;
+  border: 2px solid #85edfb;
+  font-size:1.5rem;
+}
+
+.event-details-list{
+  font-size:1.5rem;
+  display: inline-block;
+}
+
+.register-para{
+  color:white;
+  font-size:1.2rem;
+  font-weight: bold;
+}
+
+.event-poster{
+  padding:2rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-poster-image{
+  max-width:100%;
+  border-radius:10px;
+}
+
+.register-link{
+  text-decoration: none;
+  color:#85edfb;
+}
+
+.register-link:hover{
+  padding-left: 1rem;
+  color:#8d5293;
+}
+
+
+
+/* ------------------------------------------ */
+
         /* Styling for Responsiveness */ 
 
 /* -------------------------------------------- */
