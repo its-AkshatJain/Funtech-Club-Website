@@ -6,6 +6,13 @@ navButton.addEventListener("click",()=>{
     navbar.classList.toggle("active");
 })
 
+// custom pointer
+var cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove",function(dots){
+  cursor.style.left = dots.x -100 +"px"
+  cursor.style.top = dots.y - 100+"px"
+})
+
 //Footer
 var currentYear = new Date().getFullYear();
 document.querySelector(".copyright").innerHTML= "© " + currentYear + " Funtech Club";

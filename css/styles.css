@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    position:relative;
 }
 
 body{
@@ -51,7 +52,16 @@ h3{
       background-position: 0% 50%;
     }
 }
-
+ /* Custom pointer effect */
+.cursor{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #8d5293;
+  filter:blur(50px);
+  z-index: -50;
+  position: fixed;
+}
 
 /* Styling for Navbar */
 .navbar{
@@ -101,7 +111,12 @@ h3{
 .nav-item{
   position:relative;
   text-decoration: none;
-  color:white;
+  color:#ffffff;
+  text-shadow: 
+    -1px -1px 0 #0F1035,  
+     1px -1px 0 #0F1035,
+    -1px 1px 0 #0F1035,
+     1px 1px 0 #0F1035;
   /* padding:1rem; */
   z-index:5;
   font-weight: 900;
@@ -364,7 +379,7 @@ h3{
   align-items: center;
 }
 .slider {
-  max-width: 70%;
+  max-width: 50%;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -697,6 +712,7 @@ h3{
 
   .nav-item{
     color:#0F1035;
+    text-shadow: none;
     padding:0;
   }
 
@@ -737,6 +753,14 @@ h3{
 
   .members-p {
     font-size: 12px;
+  }
+
+  .slider {
+    max-width: 90%;
+  }
+
+  .cursor{
+    display:none;
   }
 }
 
