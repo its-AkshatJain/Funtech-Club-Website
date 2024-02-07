@@ -10,6 +10,11 @@ body{
     background-color: #0F1035;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    position: relative;
+}
+
+.cover-up{
+  overflow-x: hidden;
 }
 
 h1,h2{
@@ -719,7 +724,8 @@ h3{
  
   .features {
     width: 30%;
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter:blur(10px);
     border-left: 2px solid rgba(255, 255, 255, 0.9); 
