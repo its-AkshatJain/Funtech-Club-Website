@@ -5,16 +5,18 @@
     position:relative;
 }
 
-body{
-    min-height: 100vh;
-    background-color: #0F1035;
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-    position: relative;
+body {
+  min-height: 100vh;
+  background-color: #0F1035;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  position: relative;
 }
 
-.cover-up{
+.cover-up {
+  min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
 }
 
 h1,h2{
@@ -96,7 +98,8 @@ h3{
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     position: sticky;
     top:0;
-    z-index: 2;
+    z-index: 100;
+    box-sizing: border-box; 
 }
 
 .website-title{
