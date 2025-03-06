@@ -478,22 +478,22 @@ h3{
 .card.CarnivalGames{
   background-image: url(../images/Events/CarnivalGames.jpeg);
 }
-.card.techBuzz{
+/* .card.techBuzz{
   background-image: url(../images/Events/Techbuzz.JPG);
 }
 
 .card.techMania{
   background-image: url(../images/Events/TechMania.jpg);
-}
+} */
 
 .card.techFiesta{
   background-image: url(../images/Events/Tech_Fiesta.jpg);
   /* background-color: black; */
 }
 
-.card.techinnovation{
+/* .card.techinnovation{
   background-image: url(../images/Events/Techno_innovation_blitz.jpg);
-}
+} */
 
 .card:hover {
   cursor: pointer;
