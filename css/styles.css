@@ -480,9 +480,9 @@ h3{
 }
 /* .card.techBuzz{
   background-image: url(../images/Events/Techbuzz.JPG);
-}
+} */
 
-.card.techMania{
+/* .card.techMania{
   background-image: url(../images/Events/TechMania.jpg);
 } */
 
@@ -491,9 +491,9 @@ h3{
   /* background-color: black; */
 }
 
-/* .card.techinnovation{
+.card.techinnovation{
   background-image: url(../images/Events/Techno_innovation_blitz.jpg);
-} */
+}
 
 .card:hover {
   cursor: pointer;
